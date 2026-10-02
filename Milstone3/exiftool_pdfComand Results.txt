@@ -1,0 +1,57 @@
+┌──(kali㉿kali)-[~/Desktop/PDF results]
+└─$ exiftool *.pdf
+======== patient_report_1.pdf
+ExifTool Version Number         : 13.55
+File Name                       : patient_report_1.pdf
+Directory                       : .
+File Size                       : 3.7 kB
+File Modification Date/Time     : 2026:09:29 15:35:03-04:00
+File Access Date/Time           : 2026:09:29 18:57:28-04:00
+File Inode Change Date/Time     : 2026:09:29 18:57:28-04:00
+File Permissions                : -rw-rw-r--
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+Encryption                      : Standard V2.3 (128-bit)
+User Access                     : Print, Modify, Copy, Annotate, Fill forms, Extract, Assemble, Print high-res
+Warning                         : Document is password protected (use Password option)
+======== patient_report_2.pdf
+ExifTool Version Number         : 13.55
+File Name                       : patient_report_2.pdf
+Directory                       : .
+File Size                       : 3.6 kB
+File Modification Date/Time     : 2026:09:29 15:35:11-04:00
+File Access Date/Time           : 2026:09:29 18:57:44-04:00
+File Inode Change Date/Time     : 2026:09:29 18:57:44-04:00
+File Permissions                : -rw-rw-r--
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+Encryption                      : Standard V2.3 (128-bit)
+User Access                     : Print, Modify, Copy, Annotate, Fill forms, Extract, Assemble, Print high-res
+Warning                         : Document is password protected (use Password option)
+======== patient_report_3.pdf
+ExifTool Version Number         : 13.55
+File Name                       : patient_report_3.pdf
+Directory                       : .
+File Size                       : 3.7 kB
+File Modification Date/Time     : 2026:09:29 15:35:18-04:00
+File Access Date/Time           : 2026:09:29 18:58:05-04:00
+File Inode Change Date/Time     : 2026:09:29 18:58:05-04:00
+File Permissions                : -rw-rw-r--
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.4
+Linearized                      : No
+Encryption                      : Standard V2.3 (128-bit)
+User Access                     : Print, Modify, Copy, Annotate, Fill forms, Extract, Assemble, Print high-res
+Warning                         : Document is password protected (use Password option)
+    3 image files read
+                                                                                                                                                              
+┌──(kali㉿kali)-[~/Desktop/PDF results]
+└─$ 

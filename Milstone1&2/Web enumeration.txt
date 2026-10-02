@@ -1,0 +1,204 @@
+──(kali㉿kali)-[~]
+└─$ nmap -p80,443 --script http-title,http-headers,ssl-cert medirozahospital.com
+
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-09-28 17:36 -0400
+Nmap scan report for medirozahospital.com (199.188.201.16)
+Host is up (0.076s latency).
+rDNS record for 199.188.201.16: server274-1.web-hosting.com
+
+PORT    STATE SERVICE
+80/tcp  open  http
+| http-headers: 
+|   Server: openresty/1.31.1.1
+|   Date: Mon, 28 Sep 2026 21:42:26 GMT
+|   Connection: close
+|   Content-Type: text/html
+|   Cache-Control: private, no-cache, no-store, must-revalidate, max-age=0
+|   cf-edge-cache: no-cache
+|   
+|_  (Request type: HEAD)
+|_http-title: One moment, please...
+443/tcp open  https
+|_http-title: 400 The plain HTTP request was sent to HTTPS port
+| ssl-cert: Subject: commonName=server274.web-hosting.com
+| Issuer: commonName=server274.web-hosting.com
+| Public Key type: rsa
+| Public Key bits: 4096
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-07-16T09:38:48
+| Not valid after:  2027-07-16T09:38:48
+| MD5:     2eb3 0b92 9de9 1b19 c667 c9e8 5ddf 8b47
+| SHA-1:   dd0e 5fa5 589b 2ef1 5206 c233 c0e1 fc20 6374 1282
+|_SHA-256: b1f5 9ae5 680d 5174 4dc1 22b1 8f4e d2dd 686b 9d80 8335 b5e7 ce25 b019 0fa0 0bda
+| http-headers: 
+|   Server: openresty/1.31.1.1
+|   Date: Mon, 28 Sep 2026 21:42:31 GMT
+|   Content-Type: text/html
+|   Content-Length: 261
+|   Connection: close
+|   
+|_  (Request type: GET)
+
+Nmap done: 1 IP address (1 host up) scanned in 7.12 seconds
+                                                                                                                                                              
+┌──(kali㉿kali)-[~]
+└─$ curl -I https://medirozahospital.com/
+curl -I http://medirozahospital.com/
+
+HTTP/2 200 
+server: openresty/1.31.1.1
+date: Mon, 28 Sep 2026 21:45:18 GMT
+content-type: text/html
+cache-control: private, no-cache, no-store, must-revalidate, max-age=0
+cf-edge-cache: no-cache
+
+HTTP/1.1 200 OK
+Server: openresty/1.31.1.1
+Date: Mon, 28 Sep 2026 21:45:19 GMT
+Connection: keep-alive
+Content-Type: text/html
+Cache-Control: private, no-cache, no-store, must-revalidate, max-age=0
+cf-edge-cache: no-cache
+
+                                                                                                                                                              
+┌──(kali㉿kali)-[~]
+└─$ curl -sS -L -o /dev/null -w 'HTTP: %{http_code} | final URL: %{url_effective} | redirects: %{num_redirects}\n' http://medirozahospital.com/
+curl -sS -L -o /dev/null -w 'HTTPS: %{http_code} | final URL: %{url_effective} | redirects: %{num_redirects}\n' https://medirozahospital.com/
+HTTP: 200 | final URL: http://medirozahospital.com/ | redirects: 0
+HTTPS: 200 | final URL: https://medirozahospital.com/ | redirects: 0
+                                                                                                                                                              
+┌──(kali㉿kali)-[~]
+└─$ 
+                                                                                                                                                              
+┌──(kali㉿kali)-[~]
+└─$ curl -sS http://medirozahospital.com/ | grep -io '<title>[^<]*</title>' | head -1
+curl -sS https://medirozahospital.com/ | grep -io '<title>[^<]*</title>' | head -1
+<title>One moment, please...</title>
+<title>One moment, please...</title>
+                                                                                                                                                              
+┌──(kali㉿kali)-[~]
+└─$ curl -sS http://medirozahospital.com/ | grep -io '<title>[^<]*</title>' | head -1
+<title>One moment, please...</title>
+                                                                                                                                                              
+┌──(kali㉿kali)-[~]
+└─$ 
+                                                                                                                                                              
+┌──(kali㉿kali)-[~]
+└─$ 
+                                                                                                                                                              
+┌──(kali㉿kali)-[~]
+└─$ ffuf -u https://medirozahospital.com/FUZZ \
+  -w /path/to/your/wordlist.txt \
+  -rate 2 -t 1 -maxtime 30 \
+  -mc all -ac
+Encountered error(s): 1 errors occurred.
+        * stat /path/to/your/wordlist.txt: no such file or directory
+
+Fuzz Faster U Fool - v2.1.0-dev
+
+HTTP OPTIONS:
+  -H                  Header `"Name: Value"`, separated by colon. Multiple -H flags are accepted.
+  -X                  HTTP method to use
+  -b                  Cookie data `"NAME1=VALUE1; NAME2=VALUE2"` for copy as curl functionality.
+  -cc                 Client cert for authentication. Client key needs to be defined as well for this to work
+  -ck                 Client key for authentication. Client certificate needs to be defined as well for this to work
+  -d                  POST data
+  -http2              Use HTTP2 protocol (default: false)
+  -ignore-body        Do not fetch the response content. (default: false)
+  -r                  Follow redirects (default: false)
+  -raw                Do not encode URI (default: false)
+  -recursion          Scan recursively. Only FUZZ keyword is supported, and URL (-u) has to end in it. (default: false)
+  -recursion-depth    Maximum recursion depth. (default: 0)
+  -recursion-strategy Recursion strategy: "default" for a redirect based, and "greedy" to recurse on all matches (default: default)
+  -replay-proxy       Replay matched requests using this proxy.
+  -sni                Target TLS SNI, does not support FUZZ keyword
+  -timeout            HTTP request timeout in seconds. (default: 10)
+  -u                  Target URL
+  -x                  Proxy URL (SOCKS5 or HTTP). For example: http://127.0.0.1:8080 or socks5://127.0.0.1:8080
+
+GENERAL OPTIONS:
+  -V                  Show version information. (default: false)
+  -ac                 Automatically calibrate filtering options (default: false)
+  -acc                Custom auto-calibration string. Can be used multiple times. Implies -ac
+  -ach                Per host autocalibration (default: false)
+  -ack                Autocalibration keyword (default: FUZZ)
+  -acs                Custom auto-calibration strategies. Can be used multiple times. Implies -ac
+  -c                  Colorize output. (default: false)
+  -config             Load configuration from a file
+  -json               JSON output, printing newline-delimited JSON records (default: false)
+  -maxtime            Maximum running time in seconds for entire process. (default: 0)
+  -maxtime-job        Maximum running time in seconds per job. (default: 0)
+  -noninteractive     Disable the interactive console functionality (default: false)
+  -p                  Seconds of `delay` between requests, or a range of random delay. For example "0.1" or "0.1-2.0"
+  -rate               Rate of requests per second (default: 0)
+  -s                  Do not print additional information (silent mode) (default: false)
+  -sa                 Stop on all error cases. Implies -sf and -se. (default: false)
+  -scraperfile        Custom scraper file path
+  -scrapers           Active scraper groups (default: all)
+  -se                 Stop on spurious errors (default: false)
+  -search             Search for a FFUFHASH payload from ffuf history
+  -sf                 Stop when > 95% of responses return 403 Forbidden (default: false)
+  -t                  Number of concurrent threads. (default: 40)
+  -v                  Verbose output, printing full URL and redirect location (if any) with the results. (default: false)
+
+MATCHER OPTIONS:
+  -mc                 Match HTTP status codes, or "all" for everything. (default: 200-299,301,302,307,401,403,405,500)
+  -ml                 Match amount of lines in response
+  -mmode              Matcher set operator. Either of: and, or (default: or)
+  -mr                 Match regexp
+  -ms                 Match HTTP response size
+  -mt                 Match how many milliseconds to the first response byte, either greater or less than. EG: >100 or <100
+  -mw                 Match amount of words in response
+
+FILTER OPTIONS:
+  -fc                 Filter HTTP status codes from response. Comma separated list of codes and ranges
+  -fl                 Filter by amount of lines in response. Comma separated list of line counts and ranges
+  -fmode              Filter set operator. Either of: and, or (default: or)
+  -fr                 Filter regexp
+  -fs                 Filter HTTP response size. Comma separated list of sizes and ranges
+  -ft                 Filter by number of milliseconds to the first response byte, either greater or less than. EG: >100 or <100
+  -fw                 Filter by amount of words in response. Comma separated list of word counts and ranges
+
+INPUT OPTIONS:
+  -D                  DirSearch wordlist compatibility mode. Used in conjunction with -e flag. (default: false)
+  -e                  Comma separated list of extensions. Extends FUZZ keyword.
+  -enc                Encoders for keywords, eg. 'FUZZ:urlencode b64encode'
+  -ic                 Ignore wordlist comments (default: false)
+  -input-cmd          Command producing the input. --input-num is required when using this input method. Overrides -w.
+  -input-num          Number of inputs to test. Used in conjunction with --input-cmd. (default: 100)
+  -input-shell        Shell to be used for running command
+  -mode               Multi-wordlist operation mode. Available modes: clusterbomb, pitchfork, sniper (default: clusterbomb)
+  -request            File containing the raw http request
+  -request-proto      Protocol to use along with raw request (default: https)
+  -w                  Wordlist file path and (optional) keyword separated by colon. eg. '/path/to/wordlist:KEYWORD'
+
+OUTPUT OPTIONS:
+  -debug-log          Write all of the internal logging to the specified file.
+  -o                  Write output to file
+  -od                 Directory path to store matched results to.
+  -of                 Output file format. Available formats: json, ejson, html, md, csv, ecsv (or, 'all' for all formats) (default: json)
+  -or                 Don't create the output file if we don't have results (default: false)
+
+EXAMPLE USAGE:
+  Fuzz file paths from wordlist.txt, match all responses but filter out those with content-size 42.
+  Colored, verbose output.
+    ffuf -w wordlist.txt -u https://example.org/FUZZ -mc all -fs 42 -c -v
+
+  Fuzz Host-header, match HTTP 200 responses.
+    ffuf -w hosts.txt -u https://example.org/ -H "Host: FUZZ" -mc 200
+
+  Fuzz POST JSON data. Match all responses not containing text "error".
+    ffuf -w entries.txt -u https://example.org/ -X POST -H "Content-Type: application/json" \
+      -d '{"name": "FUZZ", "anotherkey": "anothervalue"}' -fr "error"
+
+  Fuzz multiple locations. Match only responses reflecting the value of "VAL" keyword. Colored.
+    ffuf -w params.txt:PARAM -w values.txt:VAL -u https://example.org/?PARAM=VAL -mr "VAL" -c
+
+  More information and examples: https://github.com/ffuf/ffuf
+
+Encountered error(s): 1 errors occurred.
+        * stat /path/to/your/wordlist.txt: no such file or directory
+
+                                                                                                                                                              
+┌──(kali㉿kali)-[~]
+└─$ 
