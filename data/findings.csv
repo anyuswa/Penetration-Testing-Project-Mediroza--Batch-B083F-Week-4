@@ -1,0 +1,5 @@
+id,title,risk,milestone,status
+F01,SQL-style authentication bypass,High,M1,Open
+F02,Recoverable passwords on confidential PDFs,High,M2,Open
+F03,Internal backup location leaked in PDF metadata,Medium,M3,Open
+F04,Public directory index and confidential SQL backup,Critical,M3,Open

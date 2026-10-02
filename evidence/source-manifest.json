@@ -1,0 +1,327 @@
+{
+  "schema_version": 1,
+  "collection": "Project.zip supplied source folder",
+  "file_count": 64,
+  "files": [
+    {
+      "path": "Milstone1&2/GatheredIntel.txt",
+      "size_bytes": 13767,
+      "sha256": "17abc810c26ca9fd12965ab342db5ba5c8536e46bd4dceda27576963c0cbfeda"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 1.png",
+      "size_bytes": 364836,
+      "sha256": "d504ab988831220a8c82964b70d3d7d0c1bf103f272c78986c7f999c6c2eff49"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 10.png",
+      "size_bytes": 57289,
+      "sha256": "77a9c0e3bd8c25d4d327743752f13e5ad2734f501603000ceb8894e54d02a717"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 11.png",
+      "size_bytes": 282439,
+      "sha256": "99061c744082d0fd663c32258279746c7c7e828133904a294129db686e4f1a8d"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 12.png",
+      "size_bytes": 140855,
+      "sha256": "dc57da9a6d4bf491f56051a17c39c8e7519cf816c6f9d40cdcab957355c00860"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 13.png",
+      "size_bytes": 287232,
+      "sha256": "6b1e38ab965d54aded64c33c027566d9ff7af6bbb7ebb3fad68034d430d7a6d3"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 14.png",
+      "size_bytes": 330772,
+      "sha256": "bf8f4ba5b781dcc8397fd18224a77d7053b247b4d3b5d8644d96bc45f4ab5ddd"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 16.png",
+      "size_bytes": 266522,
+      "sha256": "676ba365cfd1a0f40afde50e72412a25a7b14eb6c0342e0af472160118fd0051"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 17.png",
+      "size_bytes": 168739,
+      "sha256": "536505b99280d441acc1b7dbac6bf1c259442cf969cf29af9b8c310835a51f00"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 18.png",
+      "size_bytes": 158090,
+      "sha256": "7c3bfd112fc3e2ee471174cf4d1ff6f42a48184fab77ea68e8eeea192c137640"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 19.png",
+      "size_bytes": 460367,
+      "sha256": "3b8ff010180c0c344772f2677b3a780e80265ff032bbd6423e7c3d49fd35c778"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 2.png",
+      "size_bytes": 162352,
+      "sha256": "8e482de5e0b37036c68ed09d3f1a675050f0df662c00fd8d6e4819fc77e1f8dc"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 20.png",
+      "size_bytes": 337694,
+      "sha256": "38fdd3c2af033bc3a0697f55975ecdd0ce610d228f34d39ce8c6614eb225e08a"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 21.png",
+      "size_bytes": 157397,
+      "sha256": "09fcbf71536be188719f4bf19cad562cad6fb6fdb795eae583ea4a1b761975e5"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 22.png",
+      "size_bytes": 109435,
+      "sha256": "d2a88b03c28e2b9ea96ce43ff3ab198119ce1ad79fe7d4537ef6a7b43605c41a"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 23.png",
+      "size_bytes": 418460,
+      "sha256": "0ff32c23e71da698e493df7daefeba30f8536fbf431c859ab732e0f86efc91b1"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 24.png",
+      "size_bytes": 369297,
+      "sha256": "1ae447e073d2f54dfd879a6dba046a14df270c3647f2f8ba80ea44b3b0daab10"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 25.png",
+      "size_bytes": 72820,
+      "sha256": "f53700b73b48e84709b694981c347ec7bde3b7b7e540dc80fd9e974156c60b78"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 3.png",
+      "size_bytes": 65339,
+      "sha256": "754484b91ab1c334b69db8626a79877e16e67da75249b93d1a620dbde6d0f982"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 4.png",
+      "size_bytes": 65073,
+      "sha256": "cdc9c1bc7be80c9c31812b27cfb6ca1de662ddabf8d16857b0e4416e77230c66"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 5.png",
+      "size_bytes": 143228,
+      "sha256": "02c02100f03dfb0a162b8666c8e4394f95e1b95472d88d45d954b782590c63f8"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 6.png",
+      "size_bytes": 440388,
+      "sha256": "364dd4627e449f2c7af02e3df0395215d029652a49a4574d577d41fbc0166341"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 7.png",
+      "size_bytes": 238955,
+      "sha256": "7048cda2d0111aec45ca88b990123eb8e5e01244a44794842c9b51df284d5893"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 8.png",
+      "size_bytes": 368606,
+      "sha256": "d6f397327d15953dcae6239efe04eed96cb54a80b49d25d8eeed783796e7bc01"
+    },
+    {
+      "path": "Milstone1&2/Screenshot 9.png",
+      "size_bytes": 723130,
+      "sha256": "4674ba115f391eafebf8c213213727cc67833633c9ebed7e6928e7d2641282c2"
+    },
+    {
+      "path": "Milstone1&2/Web enumeration.txt",
+      "size_bytes": 11769,
+      "sha256": "668461bdca13be255bc082f95f435e05913a282eaae0fbbc3d5cbb934d8a7418"
+    },
+    {
+      "path": "Milstone1&2/mysql-payloads.txt",
+      "size_bytes": 506,
+      "sha256": "a1e9b6df76b2669f3f37521429b6b5d2cbb2b222ddacdbcfa5245b603bb73582"
+    },
+    {
+      "path": "Milstone1&2/p1.png",
+      "size_bytes": 149423,
+      "sha256": "f6c35f97b8135c2e62582e8909e94407f07f72b6f22edde294bf64b47a5fa786"
+    },
+    {
+      "path": "Milstone1&2/p2.png",
+      "size_bytes": 140093,
+      "sha256": "af50b0925b2ec7991f28cdaf95c7484953d6e97ec657fcb3ab24906eb2d4ba5c"
+    },
+    {
+      "path": "Milstone1&2/p3.png",
+      "size_bytes": 143217,
+      "sha256": "78e201dffa052c5e3b9a79366e8fc37bd5babccf0a3d6b3c6f25760f0cc85c5e"
+    },
+    {
+      "path": "Milstone1&2/passwordhash1_p1.png",
+      "size_bytes": 378222,
+      "sha256": "e54ccce9640c4d05348a7b49cc316f454a2b5d3606d37c84aa9f6fcbdfc7cc2a"
+    },
+    {
+      "path": "Milstone1&2/passwordhash2_p2.png",
+      "size_bytes": 297689,
+      "sha256": "ffb3795a03aa5e0ac2581691169544bba4bc23281d84a09bcfd6d1726886396c"
+    },
+    {
+      "path": "Milstone1&2/passwordhash3_p3.png",
+      "size_bytes": 403859,
+      "sha256": "37d6e3d6ebfdb40806f42cf62cbe6ceade4f7c7ef97d764ca810b4b559446588"
+    },
+    {
+      "path": "Milstone1&2/patient1hash.txt",
+      "size_bytes": 229,
+      "sha256": "82148a2d1f20e8681f2ec845cf90ad65cc05c8a3142a045677cbbab0aa798e30"
+    },
+    {
+      "path": "Milstone1&2/patient2hash.txt",
+      "size_bytes": 229,
+      "sha256": "787b04c83732c8a2448563465538f0352221be18b3d955a0d08c57cefbea723a"
+    },
+    {
+      "path": "Milstone1&2/patient3hash.txt",
+      "size_bytes": 229,
+      "sha256": "84fa778d0fa634c25cafd34e78939f6b212cd4264e77dd2b1a7c0dae54569ea7"
+    },
+    {
+      "path": "Milstone1&2/patient_report_1.pdf",
+      "size_bytes": 3657,
+      "sha256": "ceb0a84ad92f811c281f5cdb6dd207686c80a1f7c17552a08282461c7df99d86"
+    },
+    {
+      "path": "Milstone1&2/patient_report_2.pdf",
+      "size_bytes": 3611,
+      "sha256": "0358b28270cc5b495df3ed5f98ed371510deaadcaa8256e6158837642d67a1b2"
+    },
+    {
+      "path": "Milstone1&2/patient_report_3.pdf",
+      "size_bytes": 3735,
+      "sha256": "fb4ec0e38b5ad4647543cdb60d81224adf05b77d6ebd24cddbc2df6d510fd403"
+    },
+    {
+      "path": "Milstone3/1.png",
+      "size_bytes": 263694,
+      "sha256": "8e4e03032fab9b0d115581affccfa656b226edac26b58048a1cc5460afb9375e"
+    },
+    {
+      "path": "Milstone3/10.png",
+      "size_bytes": 325161,
+      "sha256": "d0af61cce6bf75157ebd3b636d91d32f2d34c1c111deb71966703b6793e586c3"
+    },
+    {
+      "path": "Milstone3/12.png",
+      "size_bytes": 438197,
+      "sha256": "b61b94b9fb381977bd93cf9071bbed8728c1152d38e420a923b1f1d5e9905a93"
+    },
+    {
+      "path": "Milstone3/13.png",
+      "size_bytes": 569154,
+      "sha256": "02f7574e9fdf69b4f77f396d7749af2c3efcd429ce8e225b9324c554010a7499"
+    },
+    {
+      "path": "Milstone3/14.png",
+      "size_bytes": 175837,
+      "sha256": "94f6847002538b21e54e89270d169194d005fd1073a36256512e5bbe0cae71d0"
+    },
+    {
+      "path": "Milstone3/2.png",
+      "size_bytes": 64369,
+      "sha256": "2145c76dbcb19c77458f52f42e85d98fcddd78d7360b16b22f0a828e02340bc3"
+    },
+    {
+      "path": "Milstone3/3.png",
+      "size_bytes": 281511,
+      "sha256": "a892c6cd0945739a7f09d802e0112703d77795db8de9bcb6912c51214707846d"
+    },
+    {
+      "path": "Milstone3/4.png",
+      "size_bytes": 297215,
+      "sha256": "36190752aa027a4113c2871df7352e956eaf3cbcfc1a5b8adb09950474fc6666"
+    },
+    {
+      "path": "Milstone3/5.png",
+      "size_bytes": 114083,
+      "sha256": "24e4b38317156d61c93082f45050a6bd626282a0689519a20838b04d17226a60"
+    },
+    {
+      "path": "Milstone3/6.png",
+      "size_bytes": 351912,
+      "sha256": "b5c08b647c51cf846e596c9d4a5149033e5ec0229e8a9f10ae49214dd48fb3c7"
+    },
+    {
+      "path": "Milstone3/7.png",
+      "size_bytes": 67640,
+      "sha256": "0d8c32af1fbb030d23c7957327f80d7c445969bfdc121fac280815b124e9c438"
+    },
+    {
+      "path": "Milstone3/8.png",
+      "size_bytes": 95310,
+      "sha256": "482c29f7408438a99ce81944366d47a81ee063116a313aea5a1a4d4c6d493403"
+    },
+    {
+      "path": "Milstone3/9.1.png",
+      "size_bytes": 531670,
+      "sha256": "91456f0d048a7d9c9e6e6e21947777bfaf4ec3e7476061ef4313c728850c4666"
+    },
+    {
+      "path": "Milstone3/9.2.png",
+      "size_bytes": 280914,
+      "sha256": "09f76fc6a0f6cd683cd3b903d17098234ac0f53934b576e9566d97d4210b353d"
+    },
+    {
+      "path": "Milstone3/9.png",
+      "size_bytes": 381096,
+      "sha256": "363bd3a2f2e9c890ae47de2679ef818b517a5f431540a5e75c67062b1552e867"
+    },
+    {
+      "path": "Milstone3/Everything4salaries",
+      "size_bytes": 21576,
+      "sha256": "f7841ea2e5f89769f26a29066d40c417a14c10ded6d9fc249df49df204c7db98"
+    },
+    {
+      "path": "Milstone3/Final info",
+      "size_bytes": 3954,
+      "sha256": "4c8cd3d712e817bd11874f580c106c0dd249b76aa301523cb9d66345940a0542"
+    },
+    {
+      "path": "Milstone3/For the table",
+      "size_bytes": 5157,
+      "sha256": "72ebe48c56b87e5c7251e16ae35e1630e77b5fb5da1f989c0f5063547bfc5a7b"
+    },
+    {
+      "path": "Milstone3/ForPresentation-Limited.pdf",
+      "size_bytes": 28001,
+      "sha256": "4f2d6d5a1161e1d1f73bfa8bc0d4baf7f27c3296e3596e67092623c280e6cb7d"
+    },
+    {
+      "path": "Milstone3/FullCompleteSalary list.pdf",
+      "size_bytes": 96654,
+      "sha256": "339cba41cc18964a45684e4d4bc0452bcd65dc4f22ef20cb3484ccc8bf8a0704"
+    },
+    {
+      "path": "Milstone3/Mediroza_Pentest_Assignment_Guide.pdf",
+      "size_bytes": 39887,
+      "sha256": "ce712faba5250fdb068c45125545bcaaf91766baddc4906b9a7bb5575a420c8b"
+    },
+    {
+      "path": "Milstone3/exiftool_pdfComand Results.txt",
+      "size_bytes": 3017,
+      "sha256": "8cb69f608af1f03c9f59120a6d2ef16c2e5e6f57804d4504b4b6f56e7306ec3c"
+    },
+    {
+      "path": "Milstone3/for presentation",
+      "size_bytes": 762,
+      "sha256": "4086750dc34c268160a4d7b98ef1e5c326877c75dfc4f5896f21cfa61d702dc6"
+    },
+    {
+      "path": "Milstone3/staff.txt",
+      "size_bytes": 91,
+      "sha256": "c39eef29ca4104843320d771f19ef4c575c7a9fb1a89c0d94d3aac98404d04c8"
+    },
+    {
+      "path": "WK4 Mediroza v1.pdf",
+      "size_bytes": 270564,
+      "sha256": "5701c8c15ee8ffc68e40661e7ffa69a7e15428a3cecccab3a73615c0c5ebade7"
+    }
+  ]
+}

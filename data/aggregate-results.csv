@@ -1,0 +1,10 @@
+metric,value,unit
+patient_pdfs,3,files
+employees,30,records
+shareholders,10,records
+monthly_salary_total,2027000,ZAR
+monthly_salary_mean,67566.67,ZAR
+ownership_total,100,percent
+shares_total,1000000,shares
+ordinary_shares,880000,shares
+preferential_shares,120000,shares
